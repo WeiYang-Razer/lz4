@@ -1,0 +1,23 @@
+{
+  "name": "lz4",
+  "version": "1.9.2.0",
+  "schemaVersion": 2,
+  "kind": "StaticLib",
+  "description": "TODO: one-line description of lz4",
+  "dependencies": {},
+  "build": {
+    "system": "cmake",
+    "configs": [
+      "Debug",
+      "Release",
+      "RelWithDebInfo",
+      "MinSizeRel"
+    ],
+    "configure": [
+      "-DLZ4_BUILD_LEGACY_LZ4C=OFF",
+      "-DLZ4_BUILD_CLI=OFF",
+      "-DBUILD_SHARED_LIBS=OFF"
+    ],
+    "installDir": "install"
+  }
+}
