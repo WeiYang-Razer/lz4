@@ -62,3 +62,10 @@ cmake_install_test/
 # generated Windows resource files
 lib/*.rc
 programs/*.rc
+
+# wyvrnpm-generated — do not commit
+/build/
+/wyvrn_internal/
+/wyvrn.lock
+/CMakePresets.json
+/CMakeUserPresets.json

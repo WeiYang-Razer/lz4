@@ -1,0 +1,27 @@
+{
+  "name": "lz4",
+  "version": "1.9.2.0",
+  "schemaVersion": 2,
+  "kind": "StaticLib",
+  "description": "Extremely fast lossless compression library",
+  "dependencies": {},
+  "build": {
+    "system": "cmake",
+    "configs": [
+      "Debug",
+      "Release",
+      "RelWithDebInfo",
+      "MinSizeRel"
+    ],
+    "configure": [
+      "-DLZ4_BUNDLED_MODE=OFF",
+      "-DLZ4_BUILD_LEGACY_LZ4C=OFF",
+      "-DLZ4_BUILD_CLI=OFF",
+      "-DBUILD_SHARED_LIBS=OFF",
+      "-DCMAKE_DEBUG_POSTFIX=d",
+      "-DCMAKE_RELWITHDEBINFO_POSTFIX=rd",
+      "-DCMAKE_MINSIZEREL_POSTFIX=msr"
+    ],
+    "installDir": "install"
+  }
+}
